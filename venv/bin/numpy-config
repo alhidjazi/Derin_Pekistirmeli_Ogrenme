@@ -1,0 +1,6 @@
+#!/home/alhidjazi/Documents/Bahar_Dönemi_2026/Derin_Pekiştirmeli_Öğrenme_SB1/Derin_Pekistirmeli_Ogrenme/venv/bin/python
+import sys
+from numpy._configtool import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
