@@ -46,7 +46,6 @@ LOCATION_DEFS = [
     ("Sanayi Bölgesi",  "factory",   (175, 140, 75)),
 ]
 
-# --- Araç tipleri: hız çarpanı (yüksek = daha hızlı hareket) ve batarya tüketim çarpanı ---
 VEHICLES = {
     "motor":    {"name": "Motosiklet", "speed_mult": 1.0, "drain": 1.0, "color": ACCENT_ORANGE},
     "bisiklet": {"name": "Bisiklet",   "speed_mult": 0.65, "drain": 0.5, "color": ACCENT_GREEN},
@@ -94,7 +93,7 @@ def draw_motor_icon(surf, cx, cy, size=14, heading_right=True, body_color=None, 
     pygame.draw.circle(surf, (60, 60, 80), (cx + s - 2, cy + s//2), s//3 + 1)
     pygame.draw.circle(surf, body_color, (cx + s - 2, cy + s//2), s//3)
     pygame.draw.circle(surf, wheel_color, (cx + s - 2, cy + s//2), s//3, 1)
-    # Arka tekerlek
+
     pygame.draw.circle(surf, (60, 60, 80), (cx - s + 2, cy + s//2), s//3 + 1)
     pygame.draw.circle(surf, body_color, (cx - s + 2, cy + s//2), s//3)
     pygame.draw.circle(surf, wheel_color, (cx - s + 2, cy + s//2), s//3, 1)
